@@ -1,0 +1,338 @@
+body{
+    margin: 0%;
+}
+
+img{
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h4{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+hr {
+    width: 140%;
+    height: 0.01px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: black;
+    border-style:solid;
+  }
+
+html{
+    height: fit-content;
+}
+
+/* Font Clases */
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.poppinsRegular {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.bigText{
+    font-size: 3rem;
+    margin: 0%;
+}
+
+.mdText{
+    font-family: 2rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.normalText{
+    font-size: 1rem;
+}
+
+.smallText{
+    font-size: 0.8rem;
+
+}
+
+.smallerText{
+    font-size: 0.6rem;
+
+}
+
+.diminuteText{
+    font-size: 0.5rem;
+}
+
+.gigantText{
+    font-size: 5rem;
+    margin: 0;
+}
+
+.slimText{
+    font-weight: 400 !important;
+}
+/* Color Clases */
+
+.introBg{
+    background-color: #ac8a30;
+}
+
+.darkBg{
+    background-color: #77591f;
+}
+
+.titleBg{
+    background-color: #57451d;
+}
+
+.title{
+    color: #57451d;
+}
+.white{
+    color: white;
+}
+
+.bgWhite{
+    background-color: white;
+}
+/* Container Clases */
+
+
+.imgBox{
+    height: 10vh;
+    aspect-ratio: 1/1;
+    margin: 1vh;
+}
+.MenuItem{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    flex: 1;
+    position: relative;
+    padding-right: 10px;
+    
+}
+
+.MenuContainerC{
+    margin: 5vh 2%;
+    height: auto;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.fullScreen{
+    height: 80vh;
+    padding: 10vh 0;
+}
+
+
+.button{
+    width: 100%;
+    border: 0cap;
+    border-radius: 100px;
+    background-color: #77591f;
+}
+#HaugContainer{
+    width: 50%;
+    padding: 0 25%;
+    aspect-ratio: 2/1;
+}
+/* Align Clases */
+
+.textLeft{
+    text-align: left;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+/*Flex Clases*/
+.flexAdap{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    width: 90%;
+    padding: 5%;
+}
+
+.flexItem{
+    flex: 1;
+    aspect-ratio: 100/1;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.flexBig{
+    flex: 2;
+}
+
+.flexCard{
+    flex: 1;
+    
+}
+
+.flexSmall{
+    flex: 0.5;
+}
+
+.flexSmaller{
+    flex: 0.25;
+}
+
+.flexDiminute{
+    flex: 0.1 !important;
+}
+.flexLeft{
+    align-items: flex-start;
+}
+
+.flexRight{
+    align-items: flex-end;
+}
+
+.flexCenter{
+    display: flex;
+    align-items: center;
+}
+
+.fitFlex{
+    flex:none;
+}
+
+
+/* Utility */
+
+.menuPadding{
+    padding-right: 40px;
+}
+
+.denyTop{
+    padding-top: 0% !important;
+}
+
+.denyRight{
+    padding-right: 0% !important;
+    width: 95% !important;
+}
+
+.denyBottom{
+    padding-bottom: 0% !important;
+}
+
+.width{
+    width: 70%;
+}
+
+.divider{
+    height: 10vh;
+}
+
+.padding{
+    padding: 0 10%;
+}
+
+.paddingB{
+    padding: 0 30%;
+}
+
+.denyPadding{
+    padding: 0 !important; 
+}
+
+.width{width: 100% !important;}
+
+/* MenuStuff */
+
+.MenuType{
+    flex:none;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.subOption{
+    flex: 0.5;
+    width: fit-content;
+    padding: 0 5%;
+    display: flex;
+
+}
+
+.menuOption{
+    flex: 1;
+    display: flex;
+    gap: 40px;
+}
+
+
+/* Responsivenes */
+
+@media (max-width: 950px) {
+    .flexAdap{
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .MenuContainerC{
+        flex-direction: column;
+        margin: 5vh 0%;
+    }
+
+    .MenuContainerC.introBg{
+        background: white;
+    }
+
+    .paddingPhone{
+        padding-left: 2%;
+    }
+
+    .menuOption > .flexCard{
+        height: 20vh
+    }
+
+    .menuOption > .flexBig{
+        height: 20vh
+    }
+    
+}
+
+
+
+/*Dont Even Know Anymore*/
+
+.separator{
+    margin-left: -20px;
+    padding-right:  60px !important;
+}
