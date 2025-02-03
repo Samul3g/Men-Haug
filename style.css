@@ -141,8 +141,8 @@ html{
     gap: 20px;
 }
 .fullScreen{
-    height: 80vh;
-    padding: 10vh 0;
+    height: 100%;
+    padding: 10% 0;
 }
 
 
@@ -318,8 +318,12 @@ html{
         padding-left: 2%;
     }
 
+    .marginPhone{
+        margin-left: 3%;
+    }
+
     .menuOption > .flexCard{
-        height: 20vh
+        height: 200px
     }
 
     .menuOption > .flexBig{
