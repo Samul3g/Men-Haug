@@ -1,5 +1,6 @@
 body{
     margin: 0%;
+    
 }
 
 img{
@@ -34,6 +35,7 @@ hr {
 
 html{
     height: fit-content;
+    width: 100%;
 }
 
 /* Font Clases */
@@ -126,7 +128,7 @@ html{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
+    width: 70%;
     flex: 1;
     position: relative;
     padding-right: 10px;
@@ -134,10 +136,10 @@ html{
 }
 
 .MenuContainerC{
-    margin: 5vh 2%;
+    margin-top: 5vh ;
     height: auto;
     display: flex;
-    width: 100%;
+    width: auto;
     gap: 20px;
 }
 .fullScreen{
@@ -264,6 +266,9 @@ html{
     padding: 0 10%;
 }
 
+.paddingSmall{
+    padding: 0 5%;
+}
 .paddingB{
     padding: 0 30%;
 }
@@ -272,7 +277,75 @@ html{
     padding: 0 !important; 
 }
 
+
+
+.borderWhite{
+    border: solid #FFFFFF 10px
+   
+}
+
+.borderBrown{
+    border: solid #ac8a30 10px;
+    
+}
+
+.showPhone{
+    display:none
+}
+
+
+
+.navBar{
+    position: fixed;
+  
+    height: 6vh;
+  
+    z-index: 1;
+}
+
+.navBarImage{
+   
+    height: 6vh;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+
+}
+.navBarSpace{
+    width: 100%;
+    height: 7vh;
+    position: static;
+    z-index: -1;
+}
+.navBarCont{
+    position: fixed;
+    z-index: 1;
+    height: 6vh;
+    width: 100%;
+}
+
+#navBar1{
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    right: 1vh;
+    top: 1vh;
+    background-color: #57451dD1;
+}
+
+#navBar2{
+    width: 95%;
+    background-color: #57451dEF;
+    height: 7vh;
+    left: -950px;
+    padding: 0% 2.5%;
+    gap: 10px !important;
+}
+
 .width{width: 100% !important;}
+
+.hide{
+    display: none ;
+}
+
 
 /* MenuStuff */
 
@@ -292,12 +365,59 @@ html{
 
 .menuOption{
     flex: 1;
-    display: flex;
+    display: flex !important;
     gap: 40px;
 }
 
 
+
+
 /* Responsivenes */
+
+
+
+@media (max-width: 1201px) {
+   
+    .mdText{
+        font-size: 1.1rem;
+    }
+    
+    .italic{
+        font-style: italic;
+    }
+    
+    .normalText{
+        font-size: 1rem;
+    }
+    
+    .smallText{
+        font-size: 0.7rem;
+    
+    }
+    
+    .smallerText{
+        font-size: 0.6rem;
+    
+    }
+    
+    .diminuteText{
+        font-size: 0.5rem;
+    }
+    
+    .gigantText{
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    .menuPadding{
+        padding-right: 0 ;
+    }
+
+    .menuOption{
+        gap: 20px;
+    }
+    
+}
 
 @media (max-width: 950px) {
     .flexAdap{
@@ -305,16 +425,28 @@ html{
         gap: 10vh;
     }
 
+
+    .MenuItem{
+        width: 90%;
+        padding-right: 0%;
+        margin: 0% !important;
+       
+    }
     .MenuContainerC{
         flex-direction: column;
-        margin: 5vh 0%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .denyPaddingPhone{
+        padding: 0 !important;
     }
 
     .MenuContainerC.introBg{
-        background: white;
+        background: none;
     }
 
-    .paddingPhone{
+    .Phone{
         padding-left: 2%;
     }
 
@@ -322,14 +454,47 @@ html{
         margin-left: 3%;
     }
 
-    .menuOption > .flexCard{
-        height: 200px
+    .padding{
+        padding: 0 3%;
+    }
+    .hidePhone{
+        display: none;
     }
 
-    .menuOption > .flexBig{
-        height: 20vh
+
+    .showPhone{
+        display:block
+    }
+    .imgBox {
+        height: 5vh;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+
+    .borderWhite{
+        border: none #FFFFFF 0;
+        padding:  5%;
     }
     
+    .borderBrown{
+        border: none #ac8a30 0;
+        padding: 5%;
+    }
+
+  
+    
+    
+}
+
+
+@media (max-width: 400px) {
+    .smallerText{
+        font-size: 0.5rem;
+    
+    }
 }
 
 
@@ -337,6 +502,15 @@ html{
 /*Dont Even Know Anymore*/
 
 .separator{
-    margin-left: -20px;
-    padding-right:  60px !important;
+    margin-left: -45px;
+    padding-right:  95px !important;
+}
+
+
+
+
+/*Animation*/
+
+.offOn{
+    display: none  !important;
 }
